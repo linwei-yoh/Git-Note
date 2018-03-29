@@ -10,4 +10,25 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
+3.初始化一个版本库
+在合适的地方先创建一个文件夹，在bash中cd到目标路径
+通过git init命令将当前目录变成一个git可以管理的仓库
+
+4.将目标文件放到当前目录下就可准备，将文件加入git的仓库中了
+
+
+将版本库路径下的文件加入git只需要两步
+1.添加文件到仓库 git add <file>
+git add readme.txt 将文件readme.txt添加到仓库
+
+2.确认提交 git commit
+git commit -m "wrote a readme file"
+-m 指令用于备注说明此次提交的内容，方便从历史记录里找到改动记录
+可以不加，但是不推荐
+
+可以一次性添加多个文件
+$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files."
+
 
