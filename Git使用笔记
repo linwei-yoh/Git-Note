@@ -1,0 +1,13 @@
+1.下载安装
+windows:
+在官网https://git-scm.com/downloads，下载并以默认设置安装即可
+linux:
+先输入git，确定有无安装，没得话通常会给出提示，或者Ubuntu上使用sudo apt-get install git来安装
+
+2.初始设置
+安装完成后在git bash中配置 用户名和Email
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+
+
