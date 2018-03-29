@@ -1,3 +1,10 @@
+要点：
+1.git status  查看当前版本库状态
+2.如果status告知有文件被修改过 
+  git diff <file> 查看文件的变动
+
+
+
 1.查看当前仓库的状态 git status
 直接运行git status，可以查看当前仓库的状态，是否有文件变动,是否有提交
 $ git status
