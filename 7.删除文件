@@ -1,0 +1,25 @@
+要点：
+git rm <file_name>
+
+
+直接删除工作区文件后
+查看 status，
+$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       deleted:    test.txt
+#
+此时工作区和版本库就不一致了
+
+有两个选择
+1.确实需要从版本库中删除该文件
+git rm <file_name>
+git commit -m "remove test"
+即可从版本库中删除
+
+2.删除出错想要恢复
+git checkout -- <file_name>
+用版本库中的版本替换工作区的版本。但是会丢失最后一次提交后的修改
