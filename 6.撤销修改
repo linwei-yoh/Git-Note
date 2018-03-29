@@ -1,1 +1,24 @@
+要点:
+git checkout -- <file_name>   
+注意 -- 标记很重要，不加的话当前指令会变成分支切换命令
 
+git reset HEAD <file_name>
+暂存区的修改回退到工作区，HEAD表示最新版本(???)
+
+
+修改工作区文件后，
+如果还没执行add：
+那么git checkout -- <file_name>将会使工作区文件回滚到最近一次的add/commit状态
+或者说，就是讲工作区文件回滚到暂存区，或者版本库中最新的版本状态
+
+如果已经执行add:
+执行git reset HEAD <file_name>，可以将暂存区的修改撤销、
+reset 既可以回退版本，也可以将暂存区的修改退回工作区。HEAD表示使用最新版本。
+此时，暂存区是干净的，但是工作区还是有修改。
+再执行 git checkout -- <file_name>，再撤销工作区修改，即可完成
+
+如果已经执行commit
+通过git reset --hard HEAD^ 回到上个版本。
+
+如果已经提交到远程仓库
+GG
