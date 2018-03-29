@@ -18,6 +18,8 @@ $ git status
 no changes added to commit (use "git add" and/or "git commit -a")
 上述就是文件有改动，但是没有被提交
 
+如果是一个心增文件在工作区，而没有被add进git，会额外显示Untracked files
+
 2.查看变动 git diff
 dit diff readme.txt
 $ git diff readme.txt 
